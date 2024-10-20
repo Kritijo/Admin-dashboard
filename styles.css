@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+    --golden-yellow : rgb(251, 198, 5);
 }
 
 body{
@@ -52,7 +53,7 @@ img{
     align-items: center;
     justify-content: center;
     border-radius:50px;
-    background-color: rgb(251, 198, 5);
+    background-color: var(--golden-yellow);
 }
 
 .cat-img > img{
@@ -60,7 +61,7 @@ img{
 }
 
 .cat{
-    background-color: rgb(251, 198, 5);
+    background-color: var(--golden-yellow);
     border-radius: 50px;
     height: 40px;
     width: 40px;
@@ -127,3 +128,72 @@ button{
     font-size: 20px;
 }
 
+.main{
+    padding: 30px 20px;
+    background-color: #dbeafe;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:15px;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.project-section{
+    display: grid;
+    grid-template: 0.1fr 2fr/1fr;
+    gap:10px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:15px;
+    overflow: auto;
+}
+
+.card{
+    background-color: white;
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px rgba(10,10,10,0.1);
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+}
+ 
+.border{
+    max-height: 100%;
+    width: 8px;
+    background-color: var(--golden-yellow);
+    border-radius:10px 0px 0px 10px;
+}
+
+.card-text{
+    flex:1;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+}
+
+.card-icons{
+    justify-self:right;
+    display: flex;
+    gap:10px;
+}
+
+.card-icons img{
+    height: 20px;
+}
+
+.heading-text{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.sub-text{
+    font-size: 14px;
+    color: gray;
+}
